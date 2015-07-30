@@ -27,10 +27,8 @@ function beautify(bee) {
 }
 
 function run() {
-    alert('script running')
     iframe = $('iframe')
     bees = $('b', iframe.contents())
-    console.log(bees)
     re = /[A-Z]{2}[0-9]{5}/i
     arr = []
     for(i = 0; i < bees.length; i++) {
@@ -38,7 +36,6 @@ function run() {
             arr.push(bees[i]);
         }
     }
-    console.log(arr)
     for(i = 0; i < arr.length; i++) {
         beautify(arr[i])
     }
